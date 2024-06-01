@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="/exchange.png">
+    <meta name="description" content="A simple currency exchange tool.">
+</head>
+<body>
+    <div class="whole body">
+        <section>
+            <div class="bodyOfCurrency"> 
+                <h1 class="curr">Currency Exchanger</h1>
+                <div>
+                    <p class="p">Enter your amount.</p>
+                    <input type="text" class="input" id="input" placeholder="Enter your amount in numbers...">
+                </div>
+                <div class="fromTo dropdown">
+                    <select name="from" id="from">
+                        <option>PKR</option>
+                        <option>EUR</option>
+                        <option>USD</option>
+                        <option>CNY</option>
+                    </select>
+                    <i class="fa fa-exchange" id="please"></i>
+                    <select name="to" id="to">
+                        <option>USD</option>
+                        <option>CNY</option>
+                        <option>EUR</option>
+                        <option>PKR</option>
+                    </select>
+                </div>
+                <p class="peak">Your exchange rate is...</p>
+                <button type="submit">Find Exchange Rate!</button>
+            </div>
+        </section>
+    </div>
+    <script src="countrylist.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.bodyOfCurrency{
+    width: 450px;
+    height: 75vh;
+    background-color: #ED9B40;
+    margin: 50px auto;
+    border-radius: 7px;
+}
+.curr{
+    
+    text-align: center;
+    padding: 30px 15px;
+    color: #FFEEDB;
+}
+h1{
+    font-family: monospace;
+}
+.p{
+    margin-left: 36px;
+    color: #FFEEDB;
+    margin-top: 2px;
+    font-family: monospace;
+}
+.peak{
+    color: #FFEEDB;
+    margin-top: 2px;
+    font-family: monospace;
+    margin-left: 36px;
+}
+input{
+    margin-left: 5px;
+    width: 80%;
+    height: 15px;
+    border: none;
+    padding: 5px 8px;
+    display: block;
+    margin: 7px auto;
+    font-family: monospace;
+}
+input:focus{
+    outline: none;
+}
+.fromTo{
+    max-width: 60%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+select{
+    border: none !important;
+    padding: 8px 10px;
+    border-radius: 5px;
+    text-align: center;
+    outline: none; 
+    text-align-last:center;
+}
+option{
+    text-align: left;
+}
+select:focus{
+    outline: none;
+    border: none;
+}
+#please{
+    font-size: 20px;
+    color: #FFEEDB;
+}
+button{
+    width: 200px;
+    height: 50px;
+    display: block;
+    font-weight: bold;
+    margin: 100px auto;
+    border: none;
+    border-radius: 5px;
+    background-color: #AA8F66;
+    color: #FFEEDB;
+    cursor: pointer;
+    position: relative;
+    bottom: 5%;
+    transition: all 0.5s ease;
+    font-family: monospace;
+}
+button:hover{
+    background-color: #BA3B46;
+}
+
+@media only screen and (max-width: 768px) {
+    .bodyOfCurrency{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        margin: 0 auto;
+        background: linear-gradient(45deg,red, blue);
+    }
+    input{
+        width: 80%;
+        height: 30px;
+    }
+    select{
+        padding: 10px 17px;
+    }
+    .peak{
+        font-size: 17px;
+        text-align: center;
+        margin-top: 80px;
+        margin-left: 0;
+    }
+    .fromTo{
+        margin-top: 80px;
+    }
+    button{
+        margin: 100px auto 200px auto;
+    }
+    @media only screen and (max-width:600px){
+        .peak{
+            display: block;
+            margin:100px auto;
+            width: 80%;
+        }
+    }
+}
